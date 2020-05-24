@@ -10,7 +10,9 @@
 const URL_BASE = 'http://localhost:8081/bookshelf/webresources/'
 ```
 
-## Project setup
+セットアップのためにはあらかじめ[Node.js](https://nodejs.org/ja/)をインストールしておいてください。  
+
+## セットアップ
 ```
 npm install
 ```
@@ -32,3 +34,11 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## リリース方法
+```
+npm run build
+```
+実行後にbook-shelf/distが生成されます。  
+C:\inetpub\wwwrootに、book-shelfフォルダを作成し、  
+distフォルダの中身をコピーアンドペーストしてください。
