@@ -6,7 +6,14 @@
           <el-input type="text" size="large" v-model="form.userid" placeholder="ID"></el-input>
         </el-form-item>
         <el-form-item prop="password">
-          <el-input type="password" size="large" v-model="form.password" show-password placeholder="パスワード"></el-input>
+          <el-input 
+            type="password" 
+            size="large" 
+            v-model="form.password" 
+            show-password 
+            placeholder="パスワード" 
+            v-on:keyup.enter.native="login">
+          </el-input>
         </el-form-item>
         <el-form-item>
           <el-button type="primary" v-on:click="login" icon="el-icon-switch-button">ログイン</el-button>
