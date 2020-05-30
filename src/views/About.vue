@@ -138,9 +138,6 @@
 
       <!-- 画面の右側 -->
       <el-col :span="12" id="rightPart">
-        <!-- パスワード変更のダイアログ -->
-        <PasswordDialog></PasswordDialog>
-        
         <!-- グーグル検索のダイアログ -->
         <el-dialog
           title="本を検索"
@@ -286,7 +283,6 @@ import DateUtil from '@/DateUtil.js'
 import MessageUtil from '@/MessageUtil.js'
 import BookInfo from '@/components/BookInfo.vue'
 import Menu from '@/components/Menu.vue'
-import PasswordDialog from '@/components/PasswordDialog.vue'
 const axios = require('axios')
 const URL_SEARCH_BOOK = "https://www.googleapis.com/books/v1/volumes?q="
 const PAGE_SIZE = 10
@@ -295,8 +291,7 @@ export default {
   name: 'About',
   components: {
     BookInfo,
-    Menu,
-    PasswordDialog
+    Menu
   },
   data: function() {
     return {

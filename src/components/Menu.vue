@@ -14,12 +14,20 @@
         <el-dropdown-item v-on:click.native="logout">ログアウト</el-dropdown-item>
       </el-dropdown-menu>
     </el-dropdown>
+
+    <!-- パスワード変更のダイアログ -->
+    <PasswordDialog></PasswordDialog>
   </div>
 </template>
 
 <script>
+import PasswordDialog from '@/components/PasswordDialog.vue'
+
 export default {
   name: 'Menu',
+  components: {
+    PasswordDialog
+  },
   methods: {
     // パスワード変更画面オープン
     passwordDialogOpen: function() {

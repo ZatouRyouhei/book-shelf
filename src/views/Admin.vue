@@ -13,9 +13,6 @@
         <Menu></Menu>
       </el-col>
     </el-row>
-    
-    <!-- パスワード変更のダイアログ -->
-    <PasswordDialog></PasswordDialog>
 
     <transition appear>
       <router-view />
@@ -25,13 +22,11 @@
 
 <script>
 import Menu from '@/components/Menu.vue'
-import PasswordDialog from '@/components/PasswordDialog.vue'
 
 export default {
   name: 'Admin',
   components: {
-    Menu,
-    PasswordDialog
+    Menu
   },
   data: function() {
     return {
