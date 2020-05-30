@@ -23,6 +23,23 @@ Vue.use(VueRouter)
     meta: {
       isRequestAuth: true
     }
+  },
+  {
+    path: '/admin',
+    component: () => import('../views/Admin.vue'),
+    meta: {
+      isRequestAuth: true
+    },
+    children: [
+      {
+        path: 'user',
+        component: () => import('../views/User.vue')
+      }
+    ]
+  },
+  {
+    path: '*',
+    redirect: '/'
   }
 ]
 

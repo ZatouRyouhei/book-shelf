@@ -15,6 +15,12 @@ export default {
     MSG_ERROR_REGIST: function() {
         return {...MSG_ERROR, message: '登録できませんでした。'}
     },
+    MSG_ERROR_DELETE: function() {
+        return {...MSG_ERROR, message: '削除できませんでした。'}
+    },
+    MSG_ERROR_DELETE_IN_USE: function() {
+        return {...MSG_ERROR, message: '使用されているため削除できませんでした。'}
+    },
     MSG_ERROR_PASSWORD_CHANGE: function() {
         return {...MSG_ERROR, message: 'パスワードとパスワード（確認）が異なります。'}
     },
