@@ -32,6 +32,6 @@ export default new Vuex.Store({
   },
   plugins: [createPersistedState({
     key: 'book-shelf',
-    storege: sessionStorage
+    storage: sessionStorage
   })]
 })
